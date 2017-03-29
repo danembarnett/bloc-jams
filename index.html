@@ -9,6 +9,40 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/landing.css">
     </head>
+    <script>
+        var animatePoints = function() {
+            
+            var points = document.getElementsByClassName('point');
+            
+            var revealFirstPoint = function() {
+                points[0].style.opacity = 1;
+                points[0].style.transform = "scaleX(1) translateY(0)";
+                points[0].style.msTranform = "scaleX(1) translateY(0)";
+                points[0].style.WebkitTransform = "scaleX(1) translateY(0)";
+            };
+            
+            var revealSecondPoint = function() {
+                points[1].style.opacity = 1;
+                points[1].style.tranform = "scaleX(1) translateY(0)"
+                points[1].style.msTranform = "scaleX translateY(0)"
+                points[1].style.WebkitTransform = "scaleX(1) translateY(0)"
+            };
+            
+            var revealThirdPoint = function() {
+                points[2].style.opacity = 1;
+                points[2].style.tranform = "scaleX(1) translateY(0)"
+                points[2].style.msTranform = "scaleX translateY(0)"
+                points[2].style.WebkitTransform = "scaleX(1) translateY(0)"
+            };
+            
+            revealFirstPoint();
+            revealSecondPoint();
+            revealThirdPoint();
+        };
+        
+        animatePoints();
+        
+    </script>
     <body class="landing">
         <nav class="navbar"><!-- navigation bar -->
             <a href="index.html" class="logo">
